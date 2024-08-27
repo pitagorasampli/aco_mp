@@ -29,3 +29,4 @@ dependencyResolutionManagement {
 }
 
 include(":acoComposeApp")
+include(":complementary_activities_multiplatform")
