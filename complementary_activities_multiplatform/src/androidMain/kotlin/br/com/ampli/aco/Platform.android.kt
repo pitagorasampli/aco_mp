@@ -1,4 +1,4 @@
-package br.com.ampli.complementary_activities_multiplatform
+package br.com.ampli.aco
 
 class AndroidPlatform : Platform {
     override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"

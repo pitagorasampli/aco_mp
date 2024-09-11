@@ -1,4 +1,4 @@
-package br.com.ampli.complementary_activities_multiplatform.aco
+package br.com.ampli.aco.aco
 
 import AppTheme
 import android.os.Bundle

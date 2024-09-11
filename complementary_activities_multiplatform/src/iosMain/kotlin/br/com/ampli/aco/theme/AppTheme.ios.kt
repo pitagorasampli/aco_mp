@@ -1,8 +1,8 @@
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import br.com.ampli.complementary_activities_multiplatform.theme.AppTypography
-import br.com.ampli.complementary_activities_multiplatform.theme.darkScheme
-import br.com.ampli.complementary_activities_multiplatform.theme.lightScheme
+import br.com.ampli.aco.theme.AppTypography
+import br.com.ampli.aco.theme.darkScheme
+import br.com.ampli.aco.theme.lightScheme
 
 @Composable
 actual fun AppTheme(

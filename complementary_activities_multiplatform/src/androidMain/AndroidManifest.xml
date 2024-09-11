@@ -3,7 +3,7 @@
 
     <application android:theme="@android:style/Theme.Material.Light.NoActionBar">
         <activity
-            android:name=".aco.ComplementaryActivitiesActivity"
+            android:name="br.com.ampli.aco.aco.ComplementaryActivitiesActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|mnc|colorMode|density|fontScale|fontWeightAdjustment|keyboard|layoutDirection|locale|mcc|navigation|smallestScreenSize|touchscreen|uiMode"
             android:exported="true" />
     </application>

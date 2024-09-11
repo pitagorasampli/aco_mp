@@ -1,4 +1,4 @@
-package br.com.ampli.complementary_activities_multiplatform
+package br.com.ampli.aco
 
 import platform.UIKit.UIDevice
 

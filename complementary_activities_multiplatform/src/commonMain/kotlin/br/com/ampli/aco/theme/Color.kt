@@ -1,4 +1,4 @@
-package br.com.ampli.complementary_activities_multiplatform.theme
+package br.com.ampli.aco.theme
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF8B4F25)
