@@ -64,7 +64,7 @@ kotlin {
 }
 
 android {
-    namespace = "br.com.ampli.aco"
+    namespace = "br.com.ampli.complementary_activities_multiplatform"
     compileSdk = 34
     defaultConfig {
         minSdk = 23
@@ -89,30 +89,18 @@ val keystorePropertiesFile = rootProject.file("azure-config.properties")
 val keystoreProperties = Properties()
 keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
+val githubKeystorePropertiesFile = rootProject.file("github-config.properties")
+val githubKeystoreProperties = Properties()
+githubKeystoreProperties.load(FileInputStream(githubKeystorePropertiesFile))
+
 
 publishing {
     publications {
         withType<MavenPublication> {
             groupId = "br.com.ampli"
-            artifactId = "aco"
-            version = "0.0.6"
+            artifactId = "complementary_activities_multiplatform"
+            version = "0.0.12"
         }
-        /*  create<MavenPublication>("maven") {
-              from(components["kotlin"])
-              groupId = "br.com.ampli.complementary_activities_multiplatform"
-              artifactId = "aco-release"
-              version = versionName
-              pom.packaging = "jar"
-              artifact(tasks["sourcesJar"])
-          }*/
-
-        /*   create<MavenPublication>("android") {
-               groupId = "br.com.ampli.complementary_activities_multiplatform"
-               artifactId = "aco-release"
-               version = versionName
-
-               from(components["release"]) // Publicação para Android (release)
-           }*/
     }
     repositories {
         maven {
@@ -121,6 +109,19 @@ publishing {
             credentials {
                 username = keystoreProperties.getProperty("userName")
                 password = keystoreProperties.getProperty("azureMavenAccessToken")
+            }
+        }
+
+        maven {
+            name = "GitHubPackages"
+
+            url = uri("https://maven.pkg.github.com/pitagorasampli/aco_mp")
+
+            credentials {
+                 username =
+                    githubKeystoreProperties.getProperty("gpr.usr") ?: System.getenv("GPR_USER")
+                password =
+                    githubKeystoreProperties.getProperty("gpr.key") ?: System.getenv("GPR_API_KEY")
             }
         }
     }
