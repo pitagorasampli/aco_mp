@@ -99,7 +99,7 @@ publishing {
         withType<MavenPublication> {
             groupId = "br.com.ampli"
             artifactId = "complementary_activities_multiplatform"
-            version = "0.0.12"
+            version = "0.0.13"
         }
     }
     repositories {
