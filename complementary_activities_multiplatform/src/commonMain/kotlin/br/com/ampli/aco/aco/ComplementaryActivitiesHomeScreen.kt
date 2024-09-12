@@ -9,10 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun ComplementaryActivitiesHomeScreen() {
+fun ComplementaryActivitiesHomeScreen(id: String) {
     AppTheme {
         Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center) {
-            Text("Complementary Activities Home Screen")
+            Text("Complementary Activities Home Screen $id")
         }
     }
 }

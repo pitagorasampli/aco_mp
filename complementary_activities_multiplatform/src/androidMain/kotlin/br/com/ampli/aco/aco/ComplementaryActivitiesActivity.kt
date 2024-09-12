@@ -11,7 +11,7 @@ class ComplementaryActivitiesActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             AppTheme {
-                ComplementaryActivitiesHomeScreen()
+                ComplementaryActivitiesHomeScreen("idAndroid")
             }
         }
     }
